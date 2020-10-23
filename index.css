@@ -1,0 +1,117 @@
+body{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    min-height: 100vh;
+    width:100vw;
+    margin:auto;
+    color:white;
+    font-family: sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.39), rgba(65, 0, 0, 0.863)),url("./images/geometric-orange.svg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-container{
+    display: grid;
+    place-items: center;
+    
+}
+
+img{
+    margin-top:3rem;
+}
+
+
+.login-form{
+    padding-bottom:2rem;
+    width: 550px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(#00000083,#000000d1 70%);
+    border-radius: 1rem;
+}
+
+input{
+    width:300px;
+    background-color: transparent;
+    border-bottom: 1px rgb(163, 87, 15) solid;
+    border-top:none;
+    border-left: none;
+    border-right:none;
+    outline: none;
+    font-size:20px;
+    color:white;
+    font-family: "FontAwesome";
+}
+
+
+
+
+.input-container{
+    display: grid;
+    place-items: center;
+    margin-top:9rem;
+    grid-auto-flow: row;
+    gap:4rem;
+    
+}
+
+input:focus{
+    border-bottom: 3px rgb(209, 104, 6) solid;
+    color:white;
+}
+
+button{
+    margin-top:1rem;
+    width: 304px;
+    height: 60px;
+    background-color: transparent;
+    border:2px solid rgb(255, 255, 255);
+    padding:1rem;
+    border-radius:2rem;
+    color:white;
+    text-transform: uppercase;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover{
+    background-color: rgba(209, 104, 6,0.8);
+    color:white;
+}
+
+.password-msg-container{
+    margin-top:3rem;
+    text-align: center;
+}
+
+
+.icon-inp-container{
+    display: flex;
+    align-items: center;
+}
+
+
+@media only screen and (max-width: 620px) {
+    .login-form {
+      width: 450px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .login-form {
+        width: 100vw;
+    }
+   
+    .input-container{
+        margin-top:3rem;
+    }
+
+
+}
+
