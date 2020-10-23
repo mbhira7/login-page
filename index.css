@@ -96,20 +96,31 @@ button:hover{
     align-items: center;
 }
 
-
 @media only screen and (max-width: 620px) {
     .login-form {
       width: 450px;
     }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 475px) {
     .login-form {
-        width: 100vw;
+        width: 380px;
     }
    
     .input-container{
-        margin-top:3rem;
+        margin-top:4rem;
+    }
+
+
+}
+
+@media only screen and (max-width: 400px) {
+    .login-form {
+        width: 330px;
+    }
+   
+    .input-container{
+        margin-top:4rem;
     }
 
 
