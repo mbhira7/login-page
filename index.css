@@ -101,40 +101,28 @@ button:hover{
 }
 
 
+
 @media only screen and (max-width: 620px) {
-    .login-form {
-      width: 450px;
+    .login-container{
+        transform: scale(0.85);
     }
 }
 
 @media only screen and (max-width: 475px) {
-    .login-form {
-        width: 380px;
+    .login-container{
+        transform: scale(0.75);
     }
 
 }
 
-@media only screen and (max-width: 400px) {
-    .login-form {
-        width: 330px;
-    }
 
-}
-
-@media only screen and (max-width: 360px) {
-    .login-form {
-        width: 90%;
-    }
-   
-    input{
-        width:100%;
-    }
+@media only screen and (max-width: 300px) {
+    
     button{
-        width:auto;
+        width: auto;
     }
-
-    img{
-        width: 90%;
+    input{
+        width:auto;
     }
 
 }
